@@ -8,17 +8,17 @@ describe('Update todo list description with respective index number', () => {
   });
 });
 
-describe("Update todo isCompleted with respective index number", () => {
-  test("todo isCompleted is true as the index number in param should be changes", () => {
+describe('Update todo isCompleted with respective index number', () => {
+  test('todo isCompleted is true as the index number in param should be changes', () => {
     expect(tasksEditUpdateCompleted.updateComplete(0)).toEqual(
-      collection.isCompleted
+      collection.isCompleted,
     );
   });
 });
-describe("delete todo list where isCompleted status is true", () => {
-  test("todo list should only show todo list with isCompleted status is false", () => {
+describe('delete todo list where isCompleted status is true', () => {
+  test('todo list should only show todo list with isCompleted status is false', () => {
     expect(tasksEditUpdateCompleted.removeAllCompleted()).toEqual(
-      collection.length
+      collection.length,
     );
   });
 });
