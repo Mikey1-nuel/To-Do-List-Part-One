@@ -15,12 +15,12 @@ describe('Task Add function to add taks in  collection', () => {
   });
 });
 
-describe("Checking the Remove function argument", () => {
-  test("Does removeTask function exist?", () => {
+describe('Checking the Remove function argument', () => {
+  test('Does removeTask function exist?', () => {
     expect(addRemove.removeTask).toBeDefined();
   });
 
-  it("Remove a task if it exist in the collection", () => {
+  it('Remove a task if it exist in the collection', () => {
     expect(addRemove.removeTask(0)).toEqual(addRemove.existingTasks());
   });
 });
